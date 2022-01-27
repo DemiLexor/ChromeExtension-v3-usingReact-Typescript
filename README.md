@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-First clone the project using `git clone https://github.com/UserName/RepoName.git`
+First clone the project using `git clone https://github.com/JoseCGDEV/ChromeExtension-v3-usingReact-Typescript.git`
 
 Then run the `npm -i` command to install the project dependencies
 
