@@ -2,11 +2,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+First clone the project using `git clone https://github.com/UserName/RepoName.git`
+
+Then run the `npm -i` command to install the project dependencies
+
+## Build the extension
 
 In the project directory, you can run:
 ### `npm run build` to build the extension
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The command will build the app for production in the `build`.\ folder then just load the folder as an unzipped chrome extension.
 
