@@ -7,9 +7,9 @@ This is a base repository with all the initial features needed to build chromium
 - [x] Manifest v3
 - [x] Typescript
 - [x] Emotions
-_ _ 
-* * 
-_ _ 
+_ _ _ 
+* * *
+_ _ _ 
 
 ## 🚀Starting...
 
@@ -37,6 +37,10 @@ In the main project directory, run the command:
 1. Access Chrome and go to the **Extensions** section.
 2. Enable **developer mode** and click **Load unzipped**.
 3. Next load the `/build` folder where your extension will be found.
+
+
+![screenshot2](https://github.com/JoseCGDEV/ChromeExtension-v3-usingReact-Typescript/blob/main/screenshots/2.png)
+![screenshot](https://github.com/JoseCGDEV/ChromeExtension-v3-usingReact-Typescript/blob/main/screenshots/1.png)
 
 ✅Ready!
 
