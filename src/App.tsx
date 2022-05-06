@@ -2,10 +2,13 @@ import React from 'react';
 import './App.css';
 import { DOMMessage, DOMMessageResponse } from './types';
 
+import { css } from '@emotion/css';
+
+import Card from './components/Card';
+
 function App() {
+
   const [title, setTitle] = React.useState('');
-  const [headlines, setHeadlines] = React.useState<string[]>([]);
-  const [anchors, setAnchors] = React.useState<string[]>([]);
 
   React.useEffect(() => {
     /**
@@ -28,8 +31,6 @@ function App() {
         { type: 'GET_DOM' } as DOMMessage,
         (response: DOMMessageResponse) => {
           setTitle(response.title);
-          setHeadlines(response.headlines);
-          setAnchors(response.anchors);
         });
       });
       
@@ -37,48 +38,24 @@ function App() {
 
   return (
     <div className="App">
-      <h2>Simply React Extension Skeleton</h2>
+      <h2 className={css`
+          margin-bottom: 5px;
+        `}>
+        Chrome Extension Manifest v3 Using React and Typescript
+      </h2>
+      <Card>
+        <h4 className={css`
+          margin-bottom: 5px;
+        `}>{title}</h4>
+        <p>the title of this page contains <b>{title.length}</b> characters</p>
 
-      <ul className="SEOForm">
-        <li className="SEOValidation">
-          <div className="SEOValidationField">
-            <span className="SEOValidationFieldTitle">Title</span>
-            <span className={`SEOValidationFieldStatus ${title.length < 30 || title.length > 65 ? 'Error' : 'Ok'}`}>
-              {title.length} Characters
-            </span>
-          </div>
-          <div className="SEOVAlidationFieldValue">
-            {title}
-          </div>
-        </li>
-
-        <li className="SEOValidation">
-          <div className="SEOValidationField">
-            <span className="SEOValidationFieldTitle">Main Heading</span>
-            <span className={`SEOValidationFieldStatus ${headlines.length !== 1 ? 'Error' : 'Ok'}`}>
-              {headlines.length}
-            </span>
-          </div>
-          <div className="SEOVAlidationFieldValue">
-            <ul>
-              {headlines.map((headline, index) => (<li key={index}>{headline}</li>))}
-            </ul>
-          </div>
-        </li>
-
-        <li className="SEOValidation">
-          <div className="SEOValidationField">
-            <span className="SEOValidationFieldTitle">Links on page</span>
-            <span className={`SEOValidationFieldStatus ${anchors.length !== 50 ? 'Error' : 'Ok'}`}>
-              {anchors.length}
-            </span>
-          </div>
-          <div className="SEOVAlidationFieldValue">
-          </div>
-        </li>
-
-
-      </ul>
+        <p className={css`
+          position: absolute;
+          font-size: 8px;
+          overflow-wrap: break-word;
+          bottom: 10px;
+        `}>https://github.com/JoseCGDEV/ChromeExtension-v3-usingReact-Typescript</p>
+      </Card>
     </div>
   );
 }
