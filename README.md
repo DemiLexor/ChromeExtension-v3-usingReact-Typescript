@@ -15,34 +15,36 @@ _ _ _
 
 ### 1️⃣Download the project
 
-1. First download the **compressed project** or **clone** using: `git clone https://github.com/JoseCGDEV/ChromeExtension-v3-usingReact-Typescript.git`
-2. Run the `npm i` command to install the project dependencies.
+* First download the **compressed project** or **clone** using: `git clone https://github.com/JoseCGDEV/ChromeExtension-v3-usingReact-Typescript.git`
+* Run the `npm i` command to install the project dependencies.
 
 ### 2️⃣Set up the project
 
-1. Go to the `/public` folder
-2. Locate the **manifest.json** file inside
-3. Enter your extension information
+* Go to the `/public` folder
+* Locate the **manifest.json** file inside
+* Enter your extension information
 
 ### 3️⃣Build your app design
 
-1. Run the `npm start` to start the local server.
-2. Inside `/src` locate the **App.js** file
+* Run the `npm start` to start the local server.
+* Inside `/src` locate the **App.js** file
 
 ### 4️⃣Build the output files of the extension
 
 In the main project directory, run the command:
 `npm run build` To build the extension
 
-1. Access Chrome and go to the **Extensions** section.
-2. Enable **developer mode** and click **Load unzipped**.
-3. Next load the `/build` folder where your extension will be found.
+<img src="https://github.com/JoseCGDEV/ChromeExtension-v3-usingReact-Typescript/blob/main/screenshots/2.png" width="300" height="auto" />
 
-
-![screenshot2](https://github.com/JoseCGDEV/ChromeExtension-v3-usingReact-Typescript/blob/main/screenshots/2.png)
-![screenshot](https://github.com/JoseCGDEV/ChromeExtension-v3-usingReact-Typescript/blob/main/screenshots/1.png)
-
+* Access Chrome and go to the **Extensions** section.
+* Enable **developer mode** and click **Load unzipped**.
+* Next load the `/build` folder where your extension will be found.
 ✅Ready!
+
+## Screenshots...
+<img src="https://github.com/JoseCGDEV/ChromeExtension-v3-usingReact-Typescript/blob/main/screenshots/1.png" width="300" height="auto" />
+
+
 
 
 
